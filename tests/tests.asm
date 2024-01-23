@@ -1,9 +1,10 @@
-section .data 
+section .data
+    num DD 69
 
 section .text
 global _start
 
 _start:
     mov eax, 1
-    mov ebx, 1
+    mov ebx, [num]
     int 80h
